@@ -129,34 +129,6 @@ void output_flush(struct pico *p)
 
 	fprintf(p->output->file, "endmodule ");
 
-	/*
-	// create a file-reading object
-	ifstream file_in;
-	file_in.open("output.hex"); // open a file
-	if (!file_in.good()) {
-		cout << "Error finding output.hex" << endl;
-		return 1; // exit if file not found
-	}
-	char index = 0;
-	while(!file_in.eof()) {
-		ostringstream line;
-		file << "defparam ram_1024_x_18.INIT_" << setw(2) << setfill('0') << hex << (int)index << " = " ;
-		int i;
-		for(i=0; i<NUMBER_OF_HEX_PER_VERILOG_LINE && !file_in.eof(); i+=4) {
-			char buf[MAX_CHARS_PER_LINE];
-			file_in.getline(buf, MAX_CHARS_PER_LINE);
-			const string &temp = line.str();
-			line.seekp(0);
-			line << buf[1] << buf[2] << buf[3] << buf[4] << temp;
-		}
-		while(i<NUMBER_OF_HEX_PER_VERILOG_LINE) {
-			i++;
-			line << "0";
-		}
-		file << "256'h" << line.str() << ";" << endl << endl;
-		index++;
-	}
-	cout << file.str();*/
 }
 
 
