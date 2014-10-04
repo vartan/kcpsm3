@@ -27,6 +27,7 @@
 #include <stdio.h>
 #include <getopt.h>
 
+
 #define PROGRAM "Pico Assembler"
 #define AUTHOR "Jan Viktorin"
 #define YEAR "2010"

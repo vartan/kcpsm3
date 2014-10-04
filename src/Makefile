@@ -6,7 +6,7 @@ CFLAGS+= -std=c99 -pedantic -Wall -Wextra -g
 # * -DNDEBUG (assert.h)
 
 MODULES=scanner stab_tree buffer main assembler output wait_queue
-PROGNAME=pico
+PROGNAME=kcpsm3
 
 MODULES_O=$(foreach module,$(MODULES),$(module).o)
 MODULES_C=$(foreach module,$(MODULES),$(module).c)
