@@ -5,4 +5,6 @@ your stuff there.
 Currently provided tests in directory test/ were downloaded from the internet (bleyer.org/pacoblaze; xilinx).
 There are some my own tests.
 
-This version has been modified to generate verilog instead of a HEX file. Type `./kcpsm3 -i INPUT_FILE.psm -o program.v` to generate a verilog module with the name program.
+This version has been modified to generate verilog instead of a HEX file. Type the following to generate a verilog module with the name program:
+
+    ./kcpsm3 -i INPUT_FILE.psm -o program.v
